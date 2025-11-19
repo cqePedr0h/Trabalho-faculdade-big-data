@@ -1,7 +1,7 @@
 # 📊 Dashboard de Big Data com Pandas e Plotly
 
 Este projeto foi desenvolvido para análise de dados da empresa **Dancor**, utilizando **Python, Pandas e Plotly**.  
-O programa lê dados de um arquivo Excel (`Planejamento (1).xlsx`), gera gráficos interativos e exporta um **dashboard único em HTML**.
+O programa lê dados de um arquivo Excel (`Planejamento (1).xlsx`), gera gráficos interativos e abre cada um deles em uma aba do navegador.
 
 ---
 
@@ -20,9 +20,7 @@ O programa lê dados de um arquivo Excel (`Planejamento (1).xlsx`), gera gráfic
   2. **Linha**: Evolução da Assertividade.
   3. **Pizza**: Distribuição dos Pedidos por Status.
   4. **Barras empilhadas**: Status dos Pedidos por Produto.
-- Exportação dos gráficos em:
-  - Arquivos **PNG** individuais (`C:/bigdata/graficos/`).
-  - Um **HTML único** (`C:/bigdata/dashboard.html`) com todos os gráficos juntos.
+- Cada gráfico é exibido em uma aba separada do navegador com `fig.show()`.
 
 ---
 
@@ -31,7 +29,7 @@ O programa lê dados de um arquivo Excel (`Planejamento (1).xlsx`), gera gráfic
 Instale os pacotes necessários:
 
 ```bash
-pip install pandas plotly kaleido openpyxl
+pip install pandas plotly openpyxl
 ```
 
 ## 📂 Estrutura do projeto
