@@ -1,7 +1,7 @@
 # main.py
 import pandas as pd
 import plotly.express as px
-from sqlite3 import conectar
+from conectar import conectar
 
 EXCEL_PATH = "C:/bigdata/Planejamento (1).xlsx"
 
@@ -79,3 +79,11 @@ fig1.show()
 fig2.show()
 fig3.show()
 fig4.show()
+
+#Chamar a função conectar
+cursor, conn = conectar()
+cursor.execute("SELECT * FROM pedido")
+pedidos = cursor.fetchall()
+print(pedidos)
+
+conn.close()

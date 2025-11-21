@@ -1,11 +1,10 @@
 import sqlite3 
 
-def conectar()
-    con = sqlite3.connect("database.db")
-    cur = con.cursor
+con = sqlite3.connect("database.db")
+cur = con.cursor
 
-    cur.execute("CREATE TABLE pedido(produto, quantidade)")
-    cur.execute("""
+cur.execute("CREATE TABLE pedido(produto, quantidade)")
+cur.execute("""
             INSERT INTO pedido VALUES
             ('Filtro Dfr-22', 10)
             ('Bomba Pratika PF-22W', 220)
@@ -14,8 +13,6 @@ def conectar()
             ('Bomba Cam-w6', 2)
             ('Bomba 709 S', 7)
             ('Bomba 725 TJM', 1)""")
-    con.commit()
+con.commit()
 
-if __name__ == "__main__":
-    conectar()
 
