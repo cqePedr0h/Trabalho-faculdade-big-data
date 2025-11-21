@@ -1,6 +1,7 @@
 # main.py
 import pandas as pd
 import plotly.express as px
+from sqlite3 import conectar
 
 EXCEL_PATH = "C:/bigdata/Planejamento (1).xlsx"
 
