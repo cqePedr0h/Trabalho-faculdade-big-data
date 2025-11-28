@@ -6,6 +6,7 @@ from conectar import conectar
 
 EXCEL_PATH = r"C:\Trabalho big data python\Trabalho-faculdade-big-data\Planejamento (1).xlsx"
 
+
 # Função robusta para ler abas
 def read_sheet_robust(path, sheet_name, try_headers=(0,1,2,3,4)):
     last_df = None
